@@ -1,0 +1,23 @@
+{
+  "name": "ddd-fe-intro",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.48.0-beta.26",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "slidev-theme-hydra-conf": "^0.0.6",
+    "vite-svg-loader": "^5.1.0",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.11.26",
+    "@vue/tsconfig": "^0.5.1"
+  }
+}
