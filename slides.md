@@ -206,6 +206,97 @@ layout: center
 # 三、前端业务复杂度主要在哪?
 
 ---
+layout: center
+---
+
+## 前端业务复杂度：
+
+<div mb="6"></div>
+
+<v-clicks at="1">
+
+- 技术栈的复杂度
+- 业务逻辑的复杂度
+- UI 交互的复杂度
+
+</v-clicks>
+
+---
+
+## 1. 技术栈的复杂度
+
+<div mb="6"></div>
+
+前端框架解决的问题：
+
+- 定义状态 （data、state）
+- 状态变化检测 （Object.defineProperty、Proxy、React reconcilliation）
+- 对状态更改做出反应 （Observable、hooks、单向数据流）
+
+---
+
+## 1. 技术栈的复杂度
+
+<div mb="6"></div>
+
+页面开发模式：
+
+- Page = Compose(ComponentA + ComponentB + Fusion/Antd)
+- Component = Compose(Fusion/Antd + React hooks + Events + State)
+
+这种组合的特性在业务层如果没有一个比较好的 <ColorfulText>组件依赖原则</ColorfulText>的话，当系统内的各种"组件"的依赖关系越来越复杂的时候，甚至“组件”之间的依赖出现环的时候，业务系统的复杂度就跟着线性递增了。
+
+---
+
+## 1. 技术栈的复杂度
+
+<div mb="6"></div>
+
+![alt text](/assets/2.jpg)
+
+---
+
+## 1. 技术栈的复杂度
+
+<div mb="6"></div>
+
+前端应用中技术栈的复杂度主要体现在以下方面：
+
+<v-clicks at="1">
+
+- <ColorfulText>组件和模块的组织</ColorfulText>：在组件化和模块化设计中，如何组织组件和模块，使得它们的依赖关系合理、清晰，以保证代码的可维护性和可扩展性。
+- <ColorfulText>状态逻辑的组织和管理</ColorfulText>：在大型前端应用中，状态管理是一个重要的问题。状态管理需要考虑状态的一致性和可变性，以及如何处理状态的变化。
+- <ColorfulText>异步数据处理</ColorfulText>：现代前端应用需要处理大量的异步数据请求和处理。异步数据处理需要考虑异步数据的请求和响应、数据缓存、数据更新和状态管理等问题。
+
+</v-clicks>
+
+---
+
+## 2. 业务逻辑的复杂度
+
+<div mb="6"></div>
+
+- 业务逻辑的复杂度通常来自于业务需求本身，例如业务规则、流程、数据处理等
+- 在前端开发中，业务逻辑复杂度可能表现为需要进行大量的数据处理、业务规则的验证、复杂的页面流程设计等
+
+---
+
+## 3. UI 交互的复杂度
+
+<div mb="6"></div>
+
+UI 交互的复杂度主要体现在：
+
+<v-clicks at="1">
+
+- 用户体验设计
+- 跨端兼容性
+- 性能优化。
+
+</v-clicks>
+
+
+---
 transition: fade-out
 layout: center
 ---
